@@ -1,5 +1,7 @@
 {
   "name": "DoIonicAngular",
-  "integrations": {},
+  "integrations": {
+    "cordova": {}
+  },
   "type": "angular"
 }
