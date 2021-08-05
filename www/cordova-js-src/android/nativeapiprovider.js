@@ -1,5 +1,4 @@
 /*
- *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -16,18 +15,22 @@
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- *
 */
 
-var exec = require('cordova/exec');
+/**
+ * Exports the ExposedJsApi.java object if available, otherwise exports the PromptBasedNativeApi.
+ */
 
-var launchscreen = {
-    show: function () {
-        exec(null, null, 'LaunchScreen', 'show', []);
+var nativeApi = this._cordovaNative || require('cordova/android/promptbasednativeapi');
+var currentApi = nativeApi;
+
+module.exports = {
+    get: function () { return currentApi; },
+    setPreferPrompt: function (value) {
+        currentApi = value ? require('cordova/android/promptbasednativeapi') : nativeApi;
     },
-    hide: function () {
-        exec(null, null, 'LaunchScreen', 'hide', []);
+    // Used only by tests.
+    set: function (value) {
+        currentApi = value;
     }
 };
-
-module.exports = launchscreen;
