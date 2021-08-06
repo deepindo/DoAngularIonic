@@ -72,6 +72,17 @@
             });
           }
         }, {
+          path: 'community',
+          loadChildren: function loadChildren() {
+            return __webpack_require__.e(
+            /*! import() */
+            "src_app_community_community_module_ts").then(__webpack_require__.bind(__webpack_require__,
+            /*! ../community/community.module */
+            74518)).then(function (m) {
+              return m.CommunityPageModule;
+            });
+          }
+        }, {
           path: 'tab3',
           loadChildren: function loadChildren() {
             return Promise.all(
@@ -256,7 +267,7 @@
       /* harmony default export */
 
 
-      __webpack_exports__["default"] = "<ion-tabs>\n\n  <ion-tab-bar slot=\"bottom\">\n    <ion-tab-button tab=\"tab1\">\n      <ion-icon name=\"triangle\"></ion-icon>\n      <ion-label>Tab 1</ion-label>\n    </ion-tab-button>\n\n    <ion-tab-button tab=\"tab2\">\n      <ion-icon name=\"ellipse\"></ion-icon>\n      <ion-label>Tab 2</ion-label>\n    </ion-tab-button>\n\n    <ion-tab-button tab=\"tab3\">\n      <ion-icon name=\"square\"></ion-icon>\n      <ion-label>Tab 3</ion-label>\n    </ion-tab-button>\n  </ion-tab-bar>\n\n</ion-tabs>\n";
+      __webpack_exports__["default"] = "<ion-tabs>\n\n  <ion-tab-bar slot=\"bottom\">\n    <ion-tab-button tab=\"tab1\">\n      <ion-icon name=\"triangle\"></ion-icon>\n      <ion-label>今日行程</ion-label>\n    </ion-tab-button>\n\n    <ion-tab-button tab=\"tab2\">\n      <ion-icon name=\"ellipse\"></ion-icon>\n      <ion-label>CRM</ion-label>\n    </ion-tab-button>\n\n    <ion-tab-button tab=\"community\">\n    <ion-icon name=\"ellipse\"></ion-icon>\n    <ion-label>社区</ion-label>\n    </ion-tab-button>\n\n    <ion-tab-button tab=\"tab3\">\n      <ion-icon name=\"square\"></ion-icon>\n      <ion-label>我的</ion-label>\n    </ion-tab-button>\n  </ion-tab-bar>\n\n</ion-tabs>\n";
       /***/
     }
   }]);

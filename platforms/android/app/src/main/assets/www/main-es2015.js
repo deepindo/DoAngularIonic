@@ -43,6 +43,10 @@ const routes = [
     {
         path: '',
         loadChildren: () => __webpack_require__.e(/*! import() */ "src_app_tabs_tabs_module_ts").then(__webpack_require__.bind(__webpack_require__, /*! ./tabs/tabs.module */ 15564)).then(m => m.TabsPageModule)
+    },
+    {
+        path: 'community',
+        loadChildren: () => __webpack_require__.e(/*! import() */ "src_app_community_community_module_ts").then(__webpack_require__.bind(__webpack_require__, /*! ./community/community.module */ 74518)).then(m => m.CommunityPageModule)
     }
 ];
 let AppRoutingModule = class AppRoutingModule {

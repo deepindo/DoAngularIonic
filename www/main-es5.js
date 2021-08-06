@@ -73,6 +73,17 @@
             return m.TabsPageModule;
           });
         }
+      }, {
+        path: 'community',
+        loadChildren: function loadChildren() {
+          return __webpack_require__.e(
+          /*! import() */
+          "src_app_community_community_module_ts").then(__webpack_require__.bind(__webpack_require__,
+          /*! ./community/community.module */
+          74518)).then(function (m) {
+            return m.CommunityPageModule;
+          });
+        }
       }];
 
       var _AppRoutingModule = function AppRoutingModule() {
