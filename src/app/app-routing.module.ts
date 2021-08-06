@@ -7,8 +7,24 @@ const routes: Routes = [
     loadChildren: () => import('./tabs/tabs.module').then(m => m.TabsPageModule)
   },
   {
-    path: 'community',
-    loadChildren: () => import('./community/community.module').then( m => m.CommunityPageModule)
+    path: 'schedule',
+    loadChildren: () => import('./schedule/schedule.module').then( m => m.SchedulePageModule)
+  },
+  {
+    path: 'visit',
+    loadChildren: () => import('./visit/visit.module').then( m => m.VisitPageModule)
+  },
+  {
+    path: 'dashboard',
+    loadChildren: () => import('./dashboard/dashboard.module').then( m => m.DashboardPageModule)
+  },
+  {
+    path: 'report',
+    loadChildren: () => import('./report/report.module').then( m => m.ReportPageModule)
+  },
+  {
+    path: 'mine',
+    loadChildren: () => import('./mine/mine.module').then( m => m.MinePageModule)
   }
 ];
 @NgModule({

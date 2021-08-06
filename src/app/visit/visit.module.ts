@@ -4,17 +4,17 @@ import { FormsModule } from '@angular/forms';
 
 import { IonicModule } from '@ionic/angular';
 
-import { CommunityPageRoutingModule } from './community-routing.module';
+import { VisitPageRoutingModule } from './visit-routing.module';
 
-import { CommunityPage } from './community.page';
+import { VisitPage } from './visit.page';
 
 @NgModule({
   imports: [
     CommonModule,
     FormsModule,
     IonicModule,
-    CommunityPageRoutingModule
+    VisitPageRoutingModule
   ],
-  declarations: [CommunityPage]
+  declarations: [VisitPage]
 })
-export class CommunityPageModule {}
+export class VisitPageModule {}
