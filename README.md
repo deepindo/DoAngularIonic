@@ -1,5 +1,6 @@
 # DoIonicAngular
 > angular + ionic + cordova 多tabs学习demo
+> 
 > 本项目不包含"node_modules"目录，还请安装完nodeJS后自行复制目录进工程
 
 # 环境配置
