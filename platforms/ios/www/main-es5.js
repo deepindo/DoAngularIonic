@@ -73,6 +73,61 @@
             return m.TabsPageModule;
           });
         }
+      }, {
+        path: 'schedule',
+        loadChildren: function loadChildren() {
+          return __webpack_require__.e(
+          /*! import() */
+          "src_app_schedule_schedule_module_ts").then(__webpack_require__.bind(__webpack_require__,
+          /*! ./schedule/schedule.module */
+          47911)).then(function (m) {
+            return m.SchedulePageModule;
+          });
+        }
+      }, {
+        path: 'visit',
+        loadChildren: function loadChildren() {
+          return __webpack_require__.e(
+          /*! import() */
+          "src_app_visit_visit_module_ts").then(__webpack_require__.bind(__webpack_require__,
+          /*! ./visit/visit.module */
+          4831)).then(function (m) {
+            return m.VisitPageModule;
+          });
+        }
+      }, {
+        path: 'dashboard',
+        loadChildren: function loadChildren() {
+          return __webpack_require__.e(
+          /*! import() */
+          "src_app_dashboard_dashboard_module_ts").then(__webpack_require__.bind(__webpack_require__,
+          /*! ./dashboard/dashboard.module */
+          34814)).then(function (m) {
+            return m.DashboardPageModule;
+          });
+        }
+      }, {
+        path: 'report',
+        loadChildren: function loadChildren() {
+          return __webpack_require__.e(
+          /*! import() */
+          "src_app_report_report_module_ts").then(__webpack_require__.bind(__webpack_require__,
+          /*! ./report/report.module */
+          54107)).then(function (m) {
+            return m.ReportPageModule;
+          });
+        }
+      }, {
+        path: 'mine',
+        loadChildren: function loadChildren() {
+          return __webpack_require__.e(
+          /*! import() */
+          "src_app_mine_mine_module_ts").then(__webpack_require__.bind(__webpack_require__,
+          /*! ./mine/mine.module */
+          76322)).then(function (m) {
+            return m.MinePageModule;
+          });
+        }
       }];
 
       var _AppRoutingModule = function AppRoutingModule() {

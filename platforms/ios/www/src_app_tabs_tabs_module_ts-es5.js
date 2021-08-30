@@ -50,46 +50,68 @@
         path: 'tabs',
         component: _tabs_page__WEBPACK_IMPORTED_MODULE_0__.TabsPage,
         children: [{
-          path: 'tab1',
+          path: 'schedule',
           loadChildren: function loadChildren() {
-            return Promise.all(
+            return __webpack_require__.e(
             /*! import() */
-            [__webpack_require__.e("common"), __webpack_require__.e("src_app_tab1_tab1_module_ts")]).then(__webpack_require__.bind(__webpack_require__,
-            /*! ../tab1/tab1.module */
-            2168)).then(function (m) {
-              return m.Tab1PageModule;
+            "src_app_schedule_schedule_module_ts").then(__webpack_require__.bind(__webpack_require__,
+            /*! ../schedule/schedule.module */
+            47911)).then(function (m) {
+              return m.SchedulePageModule;
             });
           }
         }, {
-          path: 'tab2',
+          path: 'visit',
           loadChildren: function loadChildren() {
-            return Promise.all(
+            return __webpack_require__.e(
             /*! import() */
-            [__webpack_require__.e("common"), __webpack_require__.e("src_app_tab2_tab2_module_ts")]).then(__webpack_require__.bind(__webpack_require__,
-            /*! ../tab2/tab2.module */
-            14608)).then(function (m) {
-              return m.Tab2PageModule;
+            "src_app_visit_visit_module_ts").then(__webpack_require__.bind(__webpack_require__,
+            /*! ../visit/visit.module */
+            4831)).then(function (m) {
+              return m.VisitPageModule;
             });
           }
         }, {
-          path: 'tab3',
+          path: 'dashboard',
           loadChildren: function loadChildren() {
-            return Promise.all(
+            return __webpack_require__.e(
             /*! import() */
-            [__webpack_require__.e("common"), __webpack_require__.e("src_app_tab3_tab3_module_ts")]).then(__webpack_require__.bind(__webpack_require__,
-            /*! ../tab3/tab3.module */
-            53746)).then(function (m) {
-              return m.Tab3PageModule;
+            "src_app_dashboard_dashboard_module_ts").then(__webpack_require__.bind(__webpack_require__,
+            /*! ../dashboard/dashboard.module */
+            34814)).then(function (m) {
+              return m.DashboardPageModule;
+            });
+          }
+        }, {
+          path: 'report',
+          loadChildren: function loadChildren() {
+            return __webpack_require__.e(
+            /*! import() */
+            "src_app_report_report_module_ts").then(__webpack_require__.bind(__webpack_require__,
+            /*! ../report/report.module */
+            54107)).then(function (m) {
+              return m.ReportPageModule;
+            });
+          }
+        }, {
+          path: 'mine',
+          loadChildren: function loadChildren() {
+            return __webpack_require__.e(
+            /*! import() */
+            "src_app_mine_mine_module_ts").then(__webpack_require__.bind(__webpack_require__,
+            /*! ../mine/mine.module */
+            76322)).then(function (m) {
+              return m.MinePageModule;
             });
           }
         }, {
           path: '',
-          redirectTo: '/tabs/tab1',
+          redirectTo: '/tabs/schedule',
           pathMatch: 'full'
         }]
       }, {
         path: '',
-        redirectTo: '/tabs/tab1',
+        redirectTo: '/tabs/schedule',
         pathMatch: 'full'
       }];
 
@@ -256,7 +278,7 @@
       /* harmony default export */
 
 
-      __webpack_exports__["default"] = "<ion-tabs>\n\n  <ion-tab-bar slot=\"bottom\">\n    <ion-tab-button tab=\"tab1\">\n      <ion-icon name=\"triangle\"></ion-icon>\n      <ion-label>Tab 1</ion-label>\n    </ion-tab-button>\n\n    <ion-tab-button tab=\"tab2\">\n      <ion-icon name=\"ellipse\"></ion-icon>\n      <ion-label>Tab 2</ion-label>\n    </ion-tab-button>\n\n    <ion-tab-button tab=\"tab3\">\n      <ion-icon name=\"square\"></ion-icon>\n      <ion-label>Tab 3</ion-label>\n    </ion-tab-button>\n  </ion-tab-bar>\n\n</ion-tabs>\n";
+      __webpack_exports__["default"] = "<ion-tabs>\n\n  <ion-tab-bar slot=\"bottom\">\n    <ion-tab-button tab=\"schedule\">\n      <ion-icon name=\"calendar\"></ion-icon>\n      <ion-label>日程</ion-label>\n    </ion-tab-button>\n\n    <ion-tab-button tab=\"visit\">\n      <ion-icon name=\"folder-open\"></ion-icon>\n      <ion-label>协访</ion-label>\n    </ion-tab-button>\n\n    <ion-tab-button tab=\"dashboard\">\n      <ion-icon name=\"apps\"></ion-icon>\n      <ion-label>工作台</ion-label>\n    </ion-tab-button>\n\n    <ion-tab-button tab=\"report\">\n      <ion-icon name=\"pie-chart\"></ion-icon>\n      <ion-label>报表看板</ion-label>\n    </ion-tab-button>\n\n    <ion-tab-button tab=\"mine\">\n      <ion-icon name=\"person\"></ion-icon>\n      <ion-label>我的</ion-label>\n    </ion-tab-button>\n  </ion-tab-bar>\n\n</ion-tabs>";
       /***/
     }
   }]);

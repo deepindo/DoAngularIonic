@@ -43,6 +43,26 @@ const routes = [
     {
         path: '',
         loadChildren: () => __webpack_require__.e(/*! import() */ "src_app_tabs_tabs_module_ts").then(__webpack_require__.bind(__webpack_require__, /*! ./tabs/tabs.module */ 15564)).then(m => m.TabsPageModule)
+    },
+    {
+        path: 'schedule',
+        loadChildren: () => __webpack_require__.e(/*! import() */ "src_app_schedule_schedule_module_ts").then(__webpack_require__.bind(__webpack_require__, /*! ./schedule/schedule.module */ 47911)).then(m => m.SchedulePageModule)
+    },
+    {
+        path: 'visit',
+        loadChildren: () => __webpack_require__.e(/*! import() */ "src_app_visit_visit_module_ts").then(__webpack_require__.bind(__webpack_require__, /*! ./visit/visit.module */ 4831)).then(m => m.VisitPageModule)
+    },
+    {
+        path: 'dashboard',
+        loadChildren: () => __webpack_require__.e(/*! import() */ "src_app_dashboard_dashboard_module_ts").then(__webpack_require__.bind(__webpack_require__, /*! ./dashboard/dashboard.module */ 34814)).then(m => m.DashboardPageModule)
+    },
+    {
+        path: 'report',
+        loadChildren: () => __webpack_require__.e(/*! import() */ "src_app_report_report_module_ts").then(__webpack_require__.bind(__webpack_require__, /*! ./report/report.module */ 54107)).then(m => m.ReportPageModule)
+    },
+    {
+        path: 'mine',
+        loadChildren: () => __webpack_require__.e(/*! import() */ "src_app_mine_mine_module_ts").then(__webpack_require__.bind(__webpack_require__, /*! ./mine/mine.module */ 76322)).then(m => m.MinePageModule)
     }
 ];
 let AppRoutingModule = class AppRoutingModule {

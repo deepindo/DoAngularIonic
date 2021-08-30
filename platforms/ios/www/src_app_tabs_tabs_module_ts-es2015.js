@@ -25,27 +25,35 @@ const routes = [
         component: _tabs_page__WEBPACK_IMPORTED_MODULE_0__.TabsPage,
         children: [
             {
-                path: 'tab1',
-                loadChildren: () => Promise.all(/*! import() */[__webpack_require__.e("common"), __webpack_require__.e("src_app_tab1_tab1_module_ts")]).then(__webpack_require__.bind(__webpack_require__, /*! ../tab1/tab1.module */ 2168)).then(m => m.Tab1PageModule)
+                path: 'schedule',
+                loadChildren: () => __webpack_require__.e(/*! import() */ "src_app_schedule_schedule_module_ts").then(__webpack_require__.bind(__webpack_require__, /*! ../schedule/schedule.module */ 47911)).then(m => m.SchedulePageModule)
             },
             {
-                path: 'tab2',
-                loadChildren: () => Promise.all(/*! import() */[__webpack_require__.e("common"), __webpack_require__.e("src_app_tab2_tab2_module_ts")]).then(__webpack_require__.bind(__webpack_require__, /*! ../tab2/tab2.module */ 14608)).then(m => m.Tab2PageModule)
+                path: 'visit',
+                loadChildren: () => __webpack_require__.e(/*! import() */ "src_app_visit_visit_module_ts").then(__webpack_require__.bind(__webpack_require__, /*! ../visit/visit.module */ 4831)).then(m => m.VisitPageModule)
             },
             {
-                path: 'tab3',
-                loadChildren: () => Promise.all(/*! import() */[__webpack_require__.e("common"), __webpack_require__.e("src_app_tab3_tab3_module_ts")]).then(__webpack_require__.bind(__webpack_require__, /*! ../tab3/tab3.module */ 53746)).then(m => m.Tab3PageModule)
+                path: 'dashboard',
+                loadChildren: () => __webpack_require__.e(/*! import() */ "src_app_dashboard_dashboard_module_ts").then(__webpack_require__.bind(__webpack_require__, /*! ../dashboard/dashboard.module */ 34814)).then(m => m.DashboardPageModule)
+            },
+            {
+                path: 'report',
+                loadChildren: () => __webpack_require__.e(/*! import() */ "src_app_report_report_module_ts").then(__webpack_require__.bind(__webpack_require__, /*! ../report/report.module */ 54107)).then(m => m.ReportPageModule)
+            },
+            {
+                path: 'mine',
+                loadChildren: () => __webpack_require__.e(/*! import() */ "src_app_mine_mine_module_ts").then(__webpack_require__.bind(__webpack_require__, /*! ../mine/mine.module */ 76322)).then(m => m.MinePageModule)
             },
             {
                 path: '',
-                redirectTo: '/tabs/tab1',
+                redirectTo: '/tabs/schedule',
                 pathMatch: 'full'
             }
         ]
     },
     {
         path: '',
-        redirectTo: '/tabs/tab1',
+        redirectTo: '/tabs/schedule',
         pathMatch: 'full'
     }
 ];
@@ -159,7 +167,7 @@ __webpack_require__.r(__webpack_exports__);
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
-/* harmony default export */ __webpack_exports__["default"] = ("<ion-tabs>\n\n  <ion-tab-bar slot=\"bottom\">\n    <ion-tab-button tab=\"tab1\">\n      <ion-icon name=\"triangle\"></ion-icon>\n      <ion-label>Tab 1</ion-label>\n    </ion-tab-button>\n\n    <ion-tab-button tab=\"tab2\">\n      <ion-icon name=\"ellipse\"></ion-icon>\n      <ion-label>Tab 2</ion-label>\n    </ion-tab-button>\n\n    <ion-tab-button tab=\"tab3\">\n      <ion-icon name=\"square\"></ion-icon>\n      <ion-label>Tab 3</ion-label>\n    </ion-tab-button>\n  </ion-tab-bar>\n\n</ion-tabs>\n");
+/* harmony default export */ __webpack_exports__["default"] = ("<ion-tabs>\n\n  <ion-tab-bar slot=\"bottom\">\n    <ion-tab-button tab=\"schedule\">\n      <ion-icon name=\"calendar\"></ion-icon>\n      <ion-label>日程</ion-label>\n    </ion-tab-button>\n\n    <ion-tab-button tab=\"visit\">\n      <ion-icon name=\"folder-open\"></ion-icon>\n      <ion-label>协访</ion-label>\n    </ion-tab-button>\n\n    <ion-tab-button tab=\"dashboard\">\n      <ion-icon name=\"apps\"></ion-icon>\n      <ion-label>工作台</ion-label>\n    </ion-tab-button>\n\n    <ion-tab-button tab=\"report\">\n      <ion-icon name=\"pie-chart\"></ion-icon>\n      <ion-label>报表看板</ion-label>\n    </ion-tab-button>\n\n    <ion-tab-button tab=\"mine\">\n      <ion-icon name=\"person\"></ion-icon>\n      <ion-label>我的</ion-label>\n    </ion-tab-button>\n  </ion-tab-bar>\n\n</ion-tabs>");
 
 /***/ })
 

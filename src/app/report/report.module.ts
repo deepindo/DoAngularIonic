@@ -13,8 +13,11 @@ import { ReportPage } from './report.page';
     CommonModule,
     FormsModule,
     IonicModule,
-    ReportPageRoutingModule
+    ReportPageRoutingModule,
   ],
   declarations: [ReportPage]
 })
-export class ReportPageModule {}
+
+export class ReportPageModule {
+
+}
